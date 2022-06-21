@@ -86,13 +86,6 @@ def play():
         init = int(input('Enter the loction: '))
         tableState[init - 1] = xo[currentPlayer]
 
-        if (tableState[init-1] == xo[1]):
-            valid = True
-        else:
-            print("Oops! You have OverWrite!!.")
-
-            break
-
         win = checkWin()
         if(win):
             return
